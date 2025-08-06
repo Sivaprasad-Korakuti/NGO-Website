@@ -1,0 +1,122 @@
+.volunteer-form-page {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.volunteer-form-page h1 {
+    color: #005662;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.volunteer-form-page p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.volunteer-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input[type="checkbox"],
+.form-group input[type="radio"] {
+    margin-right: 8px;
+}
+
+.form-group div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-group div label {
+    font-weight: normal;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.submit-button {
+    background-color: #00796b;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 30px auto 0 auto;
+}
+
+.submit-button:hover {
+    background-color: #004d40;
+}
+
+
+@media (max-width: 600px) {
+    .volunteer-form {
+        padding: 20px;
+        margin: 0 10px;
+    }
+
+    .form-group label {
+        font-size: 0.95em;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group select,
+    .form-group textarea {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .submit-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}

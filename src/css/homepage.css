@@ -1,0 +1,141 @@
+.home-page {
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin: 25px;
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 100vh;
+}
+
+@keyframes text-appear {
+    0% {
+        opacity: 0;
+        transform: translateY(500px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-section {
+    background-color: #e0f7fa;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.hero-section h1 {
+    font-size: 2.8em;
+    color: #00796b;
+    margin-bottom: 15px;
+}
+
+.hero-image-placeholder {
+    background-color: #1b929ca3;
+    height: 300px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-Items: center;
+    color: #666;
+    overflow: hidden;
+    font-size: 1.2em;
+}
+
+.hero-section .mission-statement {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    color: #263238;
+}
+
+.overview-section,
+.impact-section,
+.call-to-action-section {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.overview-section h2,
+.impact-section h2,
+.call-to-action-section h2 {
+    color: #00796b;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.impact-stats p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.call-to-action-section a {
+    display: inline-block;
+    background-color: #00796b;
+    color: white !important;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action-section Link {
+    margin-right: 10px;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+.call-to-action-section a:hover {
+    background-color: #004d40;
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2em;
+    }
+
+    .hero-section .mission-statement {
+        font-size: 1em;
+    }
+
+    .hero-image-placeholder {
+        height: 200px;
+    }
+
+    .overview-section h2,
+    .impact-section h2,
+    .call-to-action-section h2 {
+        font-size: 1.6em;
+    }
+
+    .call-to-action-section a {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 30px 15px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8em;
+    }
+
+    .home-page {
+        padding: 10px;
+    }
+}

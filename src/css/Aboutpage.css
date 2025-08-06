@@ -1,0 +1,98 @@
+.about-us-page {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.about-us-page h1 {
+    color: #005662;
+
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.about-us-page section {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.311);
+    text-align: left;
+
+}
+
+.about-us-page section h2 {
+    color: #00796b;
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+
+.about-us-page section h3 {
+    color: #004d40;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.about-us-page p,
+.about-us-page ul {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #444;
+}
+
+.team-member {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.team-member:last-child {
+    border-bottom: none;
+}
+
+.achievements-section ul,
+.partnerships-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.achievements-section li,
+.partnerships-section li {
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .about-us-page h1 {
+        font-size: 2em;
+    }
+
+    .about-us-page section h2 {
+        font-size: 1.8em;
+    }
+
+    .about-us-page section {
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us-page h1 {
+        font-size: 1.8em;
+    }
+
+    .about-us-page section h2 {
+        font-size: 1.5em;
+    }
+
+    .about-us-page p,
+    .about-us-page ul {
+        font-size: 1em;
+    }
+}

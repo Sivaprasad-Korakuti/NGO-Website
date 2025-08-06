@@ -1,0 +1,39 @@
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+}
+
+.slider-container {
+    display: flex;
+    white-space: nowrap;
+
+}
+
+.slider-image {
+    flex-shrink: 0;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 6px;
+}
+
+
+.slider-container.left {
+    animation: scrollLeft 40s linear infinite;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+
+        transform: translateX(calc(-265px * 6));
+    }
+}
